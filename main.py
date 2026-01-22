@@ -10,14 +10,14 @@ schemas.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Hospital Management System API")
 
-# # Add CORS middleware
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=["*"],  # For development, allowing all origins
-#     allow_credentials=True,
-#     allow_methods=["*"],
-#     allow_headers=["*"],
-# )
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # For development, allowing all origins
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app.include_router(patients.router)
 app.include_router(doctors.router)
