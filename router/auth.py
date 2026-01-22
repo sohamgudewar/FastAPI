@@ -13,7 +13,7 @@ from database import get_db
 
 
 # --- Configuration ---
-SECRET_KEY = "608da1e8a2155282f424624a1ad74bc4dba6841c4efe1346b2a023204454fd12" # Replace with your actual secret key
+SECRET_KEY = "YOUR_SECRET_KEY" # Replace with your actual secret key
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
